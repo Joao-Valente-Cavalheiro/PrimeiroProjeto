@@ -1,0 +1,118 @@
+/* -------------------------------ESTILO GERAL ------------------------------------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*--------------------------- ESTILO DO CABEÇELHO -----------------------------------------------------------------------*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block; /*serve para converter os links, se não o hover não funcionaria*/
+    transition: .3s;
+}
+
+header a:hover{ /*quando passar o mouse por cima algo vai acontecer*/
+    color: #fff;
+    transform: scale(1.15);
+}
+
+header nav ul{
+    list-style-type: none; /*NONE TIRA A BOLINHA DE FRENTE DAS LISTAS*/
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 40px; /*Raio da borda*/
+    cursor: pointer; /* o mouse vira uma maozinha quando passa em cima do botão*/
+
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 15px #00ff08b7;
+}
+
+/* -------------------------ESTILO DO TOPO DO SITE --------------------------------------------------------------------*/
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /*espaçamento entre os elementos*/ 
+}
+
+.topo-do-site h1{
+    color:#fff;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.txt-h2 h2{
+    color:#fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.topo-do-site  .txt-topo-site h1 span{
+    color: #00ff08;
+}
+
+
+.topo-do-site ul{
+    color: #fff;
+    
+}
+
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2.2s ease-in-out infinite alternate; /* 1° NOME 2°TEMPO 3°Velocidade 4°não lembro*/
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+}
+    100%{
+        top: 20px;
+    }
+}
